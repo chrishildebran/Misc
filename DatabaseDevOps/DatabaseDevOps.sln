@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PersonDB", "PersonDB\PersonDB.sqlproj", "{EE3DC9AE-C1A3-453C-9B54-FD5C5D4FA59D}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Imported", "Imported\Imported.sqlproj", "{100EC155-6230-4BAB-8948-D8161C3313DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE3DC9AE-C1A3-453C-9B54-FD5C5D4FA59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3DC9AE-C1A3-453C-9B54-FD5C5D4FA59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3DC9AE-C1A3-453C-9B54-FD5C5D4FA59D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EE3DC9AE-C1A3-453C-9B54-FD5C5D4FA59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3DC9AE-C1A3-453C-9B54-FD5C5D4FA59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE3DC9AE-C1A3-453C-9B54-FD5C5D4FA59D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{100EC155-6230-4BAB-8948-D8161C3313DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100EC155-6230-4BAB-8948-D8161C3313DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100EC155-6230-4BAB-8948-D8161C3313DC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{100EC155-6230-4BAB-8948-D8161C3313DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100EC155-6230-4BAB-8948-D8161C3313DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100EC155-6230-4BAB-8948-D8161C3313DC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5A5288B-21ED-4560-81DE-4B47CE1C552E}
+	EndGlobalSection
+EndGlobal

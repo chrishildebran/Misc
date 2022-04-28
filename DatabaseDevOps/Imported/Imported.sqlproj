@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Imported</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{100ec155-6230-4bab-8948-d8161c3313dc}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Imported</RootNamespace>
+    <AssemblyName>Imported</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_TripleGusset.sql" />
+    <Build Include="dbo\Tables\ObjectReprModes.sql" />
+    <Build Include="dbo\Tables\ExplodeObjectsTo.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_PlatformPlate.sql" />
+    <Build Include="dbo\Tables\ReprModeProfiles.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_PlatformT.sql" />
+    <Build Include="dbo\Tables\ExplodeProfile.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_TubeBasePlate.sql" />
+    <Build Include="dbo\Tables\Texts.sql" />
+    <Build Include="dbo\Tables\ExplodeSettings.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_FlangeHaunch.sql" />
+    <Build Include="dbo\Tables\HRLDefinition.sql" />
+    <Build Include="dbo\Tables\ASVersion.sql" />
+    <Build Include="dbo\Tables\INFO.sql" />
+    <Build Include="dbo\Tables\ApprovalComment.sql" />
+    <Build Include="dbo\Tables\INFOSTATUS.sql" />
+    <Build Include="dbo\Tables\ApprovalStatus.sql" />
+    <Build Include="dbo\Tables\InfoTableRelations.sql" />
+    <Build Include="dbo\Tables\DbVersion.sql" />
+    <Build Include="dbo\Tables\Linetypes.sql" />
+    <Build Include="dbo\Tables\DetailFilenameSelector.sql" />
+    <Build Include="dbo\Tables\MapInternToExtern.sql" />
+    <Build Include="dbo\Tables\DetObjQualifierSetItem.sql" />
+    <Build Include="dbo\Tables\DetailMasterTable.sql" />
+    <Build Include="dbo\Tables\ModelExtracts.sql" />
+    <Build Include="dbo\Tables\DetailProcessCategories.sql" />
+    <Build Include="dbo\Tables\DetailProcessScalesItem.sql" />
+    <Build Include="dbo\Tables\ModelExtractUpdateInfo.sql" />
+    <Build Include="dbo\Tables\DetailProcessDefinition.sql" />
+    <Build Include="dbo\Tables\PreferredSizesItems.sql" />
+    <Build Include="dbo\Tables\ModelRolesRules.sql" />
+    <Build Include="dbo\Tables\DetailProcessMain2CutScale.sql" />
+    <Build Include="dbo\Tables\ModelSelectionApplications.sql" />
+    <Build Include="dbo\Tables\DetailProcessScales.sql" />
+    <Build Include="dbo\Tables\ModelSelections.sql" />
+    <Build Include="dbo\Tables\NecessaryViewsConfiguration.sql" />
+    <Build Include="dbo\Tables\DetailProcessStep.sql" />
+    <Build Include="dbo\Tables\DetViewRequest.sql" />
+    <Build Include="dbo\Tables\NumberingMethod.sql" />
+    <Build Include="dbo\Tables\DetailStyle.sql" />
+    <Build Include="dbo\Tables\NumberingPrefix.sql" />
+    <Build Include="dbo\Tables\DetailStyleMapItems.sql" />
+    <Build Include="dbo\Tables\DetailStyleMapNew.sql" />
+    <Build Include="dbo\Tables\AutoConnectionCategories.sql" />
+    <Build Include="dbo\Tables\NumberingPrefixProfile.sql" />
+    <Build Include="dbo\Tables\AutoConnectionCategoriesItems.sql" />
+    <Build Include="dbo\Tables\DetAnnotationType.sql" />
+    <Build Include="dbo\Tables\ReportCategories.sql" />
+    <Build Include="dbo\Tables\AutoConnectionCategoriesItemsDesc.sql" />
+    <Build Include="dbo\Tables\DetArrangerControl.sql" />
+    <Build Include="dbo\Tables\AutoConnectionConfig.sql" />
+    <Build Include="dbo\Tables\Reports.sql" />
+    <Build Include="dbo\Tables\AutoConnectionGeomConditions.sql" />
+    <Build Include="dbo\Tables\DetArrangerStrategy.sql" />
+    <Build Include="dbo\Tables\ReportSubTemplateCategories.sql" />
+    <Build Include="dbo\Tables\AutoConnectionInputObjectCondItems.sql" />
+    <Build Include="dbo\Tables\DetBaseCategories.sql" />
+    <Build Include="dbo\Tables\AutoConnectionInputObjectCondSet.sql" />
+    <Build Include="dbo\Tables\ReportSubTemplates.sql" />
+    <Build Include="dbo\Tables\AutoConnectionInputObjects.sql" />
+    <Build Include="dbo\Tables\RulesDllSigned.sql" />
+    <Build Include="dbo\Tables\DetGridReferenceSettings.sql" />
+    <Build Include="dbo\Tables\ReportTemplates.sql" />
+    <Build Include="dbo\Tables\AutoConnectionInputSet.sql" />
+    <Build Include="dbo\Tables\DetHatchSettings.sql" />
+    <Build Include="dbo\Tables\AutoConnectionModelRoles.sql" />
+    <Build Include="dbo\Tables\ReportTypes.sql" />
+    <Build Include="dbo\Tables\AutoConnectionModelRolesItems.sql" />
+    <Build Include="dbo\Tables\DetManualAnnotationType.sql" />
+    <Build Include="dbo\Tables\AutoConnectionObjectsOrderForJoints.sql" />
+    <Build Include="dbo\Tables\DetObjAnnotationGroup.sql" />
+    <Build Include="dbo\Tables\AutoConnectionProfiles.sql" />
+    <Build Include="dbo\Tables\TemplateMapping.sql" />
+    <Build Include="dbo\Tables\AutoConnectionRuleSettingsCategories.sql" />
+    <Build Include="dbo\Tables\DetObjAnnotationStrategy.sql" />
+    <Build Include="dbo\Tables\UnwindingElongation.sql" />
+    <Build Include="dbo\Tables\AutoConnectionRuleSettingsConfigurations.sql" />
+    <Build Include="dbo\Tables\DetObjAppearance.sql" />
+    <Build Include="dbo\Tables\AutoConnectionRuleSettingsGeneral.sql" />
+    <Build Include="dbo\Tables\XmlData.sql" />
+    <Build Include="dbo\Tables\AutoConnectionRuleSettingsProfiles.sql" />
+    <Build Include="dbo\Tables\DetObjQualifierSet.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems.sql" />
+    <Build Include="dbo\Tables\PreferredSizesCategories.sql" />
+    <Build Include="dbo\Tables\DetObjQualifierSetGroup.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_DoubleSideEndPlate.sql" />
+    <Build Include="dbo\Tables\PreferredSizesCategoriesAssignment.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_FrontPlateSplice.sql" />
+    <Build Include="dbo\Tables\PreferredSizesGroupBy.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_Seated_Beam_Conn.sql" />
+    <Build Include="dbo\Tables\DetObjReprMapItems.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_SingleSideEndPlate.sql" />
+    <Build Include="dbo\Tables\DetObjReprMapsNew.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_SpliceJoint.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_ThroughPlate.sql" />
+    <Build Include="dbo\Tables\DetProcessesSuiteDefinition.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_USClipAngle.sql" />
+    <Build Include="dbo\Tables\DetProcessesSuiteItems.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_USClipAngleSkewed.sql" />
+    <Build Include="dbo\Tables\DetViewArrangeStrategy.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_BasePlate.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_BracingToPlate.sql" />
+    <Build Include="dbo\Tables\DetViewDimPointSelection.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_CapPlate.sql" />
+    <Build Include="dbo\Tables\DetViewDimRequestLinear.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_DoubleGusset.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_DoubleSideClipAngle.sql" />
+    <Build Include="dbo\Tables\DetViewDimRequestLinearGroup.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_FitterJoint.sql" />
+    <Build Include="dbo\Tables\DetViewDimStrategyItems.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_FitterJoint1.sql" />
+    <Build Include="dbo\Tables\PreferredSizesProfiles.sql" />
+    <Build Include="dbo\Tables\DetViewDimStrategyNew.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_FitterJoint2.sql" />
+    <Build Include="dbo\Tables\PreferredSizesTables.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_GableWallEndPlate.sql" />
+    <Build Include="dbo\Tables\PreferredSizesTablesRelations.sql" />
+    <Build Include="dbo\Tables\BoltsCoating.sql" />
+    <Build Include="dbo\Tables\DetViewLengthClip.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_HSSBracingComplex.sql" />
+    <Build Include="dbo\Tables\PreferredSizesTypes.sql" />
+    <Build Include="dbo\Tables\Coating.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_HSSBracingSimple.sql" />
+    <Build Include="dbo\Tables\PreferredSizesTypesRelations.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_MomentEndPlate.sql" />
+    <Build Include="dbo\Tables\PreferredSizesTypeSubCategories.sql" />
+    <Build Include="dbo\Tables\Material.sql" />
+    <Build Include="dbo\Tables\DetViewRequestCategories.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_ParametricNotch.sql" />
+    <Build Include="dbo\Tables\ModelRole.sql" />
+    <Build Include="dbo\Tables\DetViewSystemAndBox.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_ShearPlateNew.sql" />
+    <Build Include="dbo\Tables\AutoConnectionParamSetItems_SingleGusset.sql" />
+    <Build Include="dbo\Tables\Notes.sql" />
+    <Build Include="dbo\Tables\DevelopersIDs.sql" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿@page "/superheros"
+ 
+@inject ISuperHeroService SuperHeroService
+
+<h3>Super Heros</h3>
+
+@code {
+
+    List<SuperHero> heros = new List<SuperHero>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        heros= await SuperHeroService.GetSuperHeros();
+                      
+    }
+}
